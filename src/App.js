@@ -7,7 +7,7 @@ import MovieList from './components/MovieList';
 import Footer from './components/Footer';
 import AddFavourites from './components/AddFavourites';
 import RemoveFavourites from './components/RemoveFavourites';
-
+import { initialValue } from './constants/constant';
 
 function App() {
 
@@ -15,7 +15,7 @@ function App() {
 
   const [doneMovies, setDoneMovies] = useState([]);
 
-  const [searchValue, setSearchValue] = useState("Avengers");
+  const [searchValue, setSearchValue] = useState(initialValue);
 
 
   const getMovieRequest = async (searchValue) => {
